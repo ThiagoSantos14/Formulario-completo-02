@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="EI=edge">
+        <title>Formulário Completo</title>
+    </head>
+    <body background="https://wallpaperaccess.com/full/701802.jpg"></body>
+
+        <h1>Formulário </h1>
+
+        <div id="form">
+            <div id="usuario">
+                <form action="formulario" method="GET" enctype="application/x-www-form-urlencoded">
+                    <fieldset>  
+                        <input type="url" name="Url-pagina" placeholder="file:///C:/Users/Thiago/Documents/Projetos/form-compl-04/form-completo.html"> 
+                        <br>
+                        <br>
+                        <input type="search" name="pesquisa" placeholder="Search:">          
+                        <center>
+                            <legend><b>Informações Do Usuário</b></legend>
+                            <br>
+                            <b>Nome</b>
+                            <br>
+                            <input type="text" name="name" required autofocus placeholder="Nickname">
+                            <br>
+                            <br>
+                            <b>Sobrenome</b>
+                            <br>
+                            <input type="text" name="last-name" required placeholder="Last name">
+                            <br>
+                            <br>
+                            <b>Nascimento</b>
+                            <br>
+                            <input type="date" name="nascimento" required min="1930-12-31" max="2022-12-31">
+                            <br>
+                            <br>
+                            <b>Estado Civil</b>
+                            <br>
+                            <select required>
+                                <optgroup label="estados civis">
+                                    <option value="solteiro">Solteiro(a)</option>
+                                    <option value="casado">Casado(a)</option>
+                                    <option value="viuvo">Viúvo(a)</option>
+                                </optgroup>
+                            </select>
+                            <br>
+                            <br>
+                            <b>Gênero</b>
+                            <br>
+                            <input type="radio" name="genero" value="masculino">Masculino
+                            <input type="radio" name="genero" value="feminino">Feminino
+                            <br>
+                            <br>
+                            <b>Foto Do Documento</b>
+                            <br>
+                            <input type="file" name="arquivo">
+                            <br>
+                            <input type="hidden" name="id-oculto">
+                        </center>
+                        <br>
+                        <input type="reset">
+                    </fieldset>
+                </form>
+            </div>
+            <br>
+            <br>
+            <br>
+
+
+            <div id="cadastro">
+                <form>
+                    <fieldset>
+                        <legend>Dados Cadastrais</legend>
+                        <br>
+                        <b>Email</b>
+                        <br>
+                        <input type="email" name="email" required placeholder="Email@gmail.com">
+                        <br>
+                        <br>
+                        <b>Senha</b>
+                        <br>
+                        <input type="password" name="senha" required placeholder="Password">
+                        <br>
+                        <br>
+                        <b>Telefone</b>
+                        <br>
+                        <input type="tel" name="telefone" required placeholder="(xx) xxxxx-xxxx">
+                        <br>
+                        <br>
+                        <b>Endereço</b>
+                        <br>
+                        <input type="text" name="endereco" required placeholder="Endereço"> <input type="number" name="numero" required placeholder="Nº">
+                        <br>
+                        <br>
+                        <b>Cidade</b>
+                        <br>
+                        <input type="text" name="cidade" required placeholder="City">
+                        <br>
+                        <br>
+                        <b>Estado</b>
+                        <br>
+                        <input name="estado" list="estados" required placeholder="Clique Aqui">
+                        <datalist id="estados">
+                            <option value="São-Paulo"></option>
+                            <option value="Minas Gerais"></option>
+                            <option value="Amazonas"></option>
+                            <option value="Pará"></option>
+                            <option value="Rio De Janeiro"></option>
+                            <option value="Rio Grande Sul"></option>
+                            <option value="Bahia"></option>
+                            <option value="Ceará"></option>
+                            <option value="Tocantins"></option>
+                        </datalist>
+                        <br>
+                        <br>
+                        <br>
+
+                        <input type="reset">
+                    
+                    </fieldset>
+                </form>
+            </div>
+            <br>
+            <br>
+            <br>
+
+
+            <div id="pessoal">
+                <form>
+                    <fieldset>
+                        <center>
+                            <legend><b>Pesquisa Pessoal</b></legend>
+                            <br>
+                            <b>Hora Da Pesquisa</b>
+                            <br>
+                            <input type="time" name="hora-pesq" required>
+                            <br>
+                            <br>
+                            <b>Semana Da Pesquisa</b>
+                            <br>
+                            <input type="week" name="seman-pesq" required>
+                            <br>
+                            <br>
+                            <b>Ano e Mês Da Pesquisa</b>
+                            <br>
+                            <input type="month" name="ano-mes-pesq" required>
+                            <br>
+                            <br>
+                            <b>Data e Hora da Pesquisa</b>
+                            <br>
+                            <input type="datetime-local" name="data-hora-pesq" required>
+                            <br>
+                            <br>
+                            <textarea name="hobby" rows="30" cols="100" spellcheck="true" required placeholder="type here your hobby and your likes"></textarea>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <b>Cor Favorita</b>
+                            <br>
+                            <input type="color" name="cor-fav">
+                            <br>
+                            <br>
+                            <b>Comida Favorita</b>
+                            <br>
+                            <input type="checkbox" name="comi-fav" value="strogonoff">Strogonoff
+                            <br>
+                            <input type="checkbox" name="comi-fav" value="macarrão">macarrão
+                            <br>
+                            <input type="checkbox" name="comi-fav" value="salsicha">Salsicha
+                            <br>
+                            <br>
+                            <br>
+                            <b>Grau de Safisfação</b>
+                            <br>
+                            <input type="range" name="satisfacao">
+                            <br>
+                            <b>0 1 2 3 4 5 6 7 8 9</b>
+                        </center>
+                        <br>
+                        <br>
+                        <br>
+
+                        <button>
+                        <input type="reset">
+                        </button>
+
+                    </fieldset>
+                </form>
+            </div>
+            <br>
+        
+
+            <center>
+                <input type="submit" name="enviar" value="Enviar" form="form" formaction="formulario" formmethod="GET" formenctype="application/x-www-form-urlencoded" formnovalidate>
+            </center>
+            <br>
+            <br>
+            <br>
+
+            <form>
+                <fieldset>
+                    <ul>
+                        <li><a href="#usuario" target="_self" accesskey="u" tabindex="1">Informações Usuário</a></li>
+                        <li><a href="#cadastro" target="_self" accesskey="c" tabindex="2">Dados Cadastro</a></li>
+                        <ii><a href="#pessoal" target="_self" accesskey="p" tabindex="3">Pesquisa Pessoal</a></ii>
+                    </ul>
+                    <br>
+                    <p><b>Desenvolvedor Página: Thiago Santos<br>Página Web Criada em: 25/08/2022 ás 19:09</b></p>
+                </fieldset>
+            </form>
+       </div>
+
+
+    </body>
+</html>
